@@ -28,3 +28,7 @@ One flaw with scalability while doing it like this is that each sensor requires 
 The sensor devices uses MQTT with TLS to send data to AWS, using certificates created by AWS. Each part of the pipeline is limited to what it can do by IAM roles and policies that dictate what is allowed and not. As we're using Amplify, these roles are automatically setup for us during deployment, but can be verified to be what they're supposed to via AWS's IAM.
 
 Amplify's functions interact with the backend by using an API key and an endpoint to GraphQL, which are both specified as "secrets" in AWS Amplify, and the access to the frontend is locked behind an account. Devices are "per-user" meaning users cannot add/claim devices that are already assigned to another user. This is a good thing for security (as no one can "steal" a device from another use) but might be a hindrance if two users should be able to both monitor overlapping devices.
+
+
+## Note
+This project was made during the course "IoT och molntjänster" at Nackademin, which was run by Johan Holmberg.
