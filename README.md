@@ -32,3 +32,7 @@ Amplify's functions interact with the backend by using an API key and an endpoin
 
 ## Note
 This project was made during the course "IoT och molntjänster" at Nackademin, which was run by Johan Holmberg.
+
+## Visualization
+![](./images/amplify.jpg)
+![](./images/pushover.jpg)
